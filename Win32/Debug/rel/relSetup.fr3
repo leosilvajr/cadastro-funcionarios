@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="2022.1.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44712,40220375" ReportOptions.Description.Text="" ReportOptions.LastChange="44712,9022148495" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="relDsSetup" DataSetName="dsSetup"/>
+  </Datasets>
+  <Styles>
+    <item Name="Title" Font.Charset="1" Font.Color="16777215" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="8421504"/>
+    <item Name="Header" Font.Charset="1" Font.Color="128" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0"/>
+    <item Name="Group header" Font.Charset="1" Font.Color="128" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="16053492"/>
+    <item Name="Data" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0"/>
+    <item Name="Group footer" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0"/>
+    <item Name="Header line" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" Frame.Width="2"/>
+  </Styles>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" HGuides.Text="" VGuides.Text="" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="94,48825" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo16" Align="baWidth" AllowVectorExport="True" Left="0" Top="60,47248" Width="718,1107" Height="34,01577" Font.Charset="1" Font.Color="16777215" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="255" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Relatório - Setup"/>
+      <TfrxMemoView Name="Memo17" Align="baWidth" AllowVectorExport="True" Left="0" Top="0" Width="718,1107" Height="56,69295" Font.Charset="1" Font.Color="16777215" Font.Height="-29" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="255" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="ALPHA SYSTEMS"/>
+    </TfrxReportTitle>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="26,45671" Left="0" Top="136,06308" Width="718,1107">
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="0" Top="0" Width="245,53110591" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777216" ParentFont="False" Text="Nome do Colaborador"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="245,53110591" Top="0" Width="121,4476301" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777216" ParentFont="False" Text="PC Name"/>
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="366,97873601" Top="0" Width="172,76727283" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777216" ParentFont="False" Text="Processador"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="539,74600885" Top="0" Width="65,35486224" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777216" ParentFont="False" Text="RAM"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="605,10087108" Top="0" Width="113,00936514" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777216" ParentFont="False" Text="Disco Rígido"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="18,89765" Left="0" Top="222,99227" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="relDsSetup" DataSetName="dsSetup" RowCount="0">
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="0" Top="0" Width="151,042855906748" Height="18,89765" DataField="nome" DataSet="relDsSetup" DataSetName="dsSetup" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Style="Data" Text="[dsSetup.&#34;nome&#34;]"/>
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="245,53110591" Top="0" Width="121,4476301" Height="18,89765" DataField="nomePC" DataSet="relDsSetup" DataSetName="dsSetup" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Style="Data" Text="[dsSetup.&#34;nomePC&#34;]"/>
+      <TfrxMemoView Name="Memo10" AllowVectorExport="True" Left="366,97873601" Top="0" Width="172,76727283" Height="18,89765" DataField="processador" DataSet="relDsSetup" DataSetName="dsSetup" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Style="Data" Text="[dsSetup.&#34;processador&#34;]"/>
+      <TfrxMemoView Name="Memo11" AllowVectorExport="True" Left="539,74600885" Top="0" Width="65,35486224" Height="18,89765" DataField="memoria" DataSet="relDsSetup" DataSetName="dsSetup" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Style="Data" Text="[dsSetup.&#34;memoria&#34;]"/>
+      <TfrxMemoView Name="Memo12" AllowVectorExport="True" Left="605,10087108" Top="0" Width="116,78889514" Height="18,89765" DataField="hd_ssd" DataSet="relDsSetup" DataSetName="dsSetup" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Style="Data" Text="[dsSetup.&#34;hd_ssd&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="26,45671" Left="0" Top="302,3624" Width="718,1107">
+      <TfrxMemoView Name="Memo13" Align="baWidth" AllowVectorExport="True" Left="0" Top="0" Width="718,1107" Height="0" Frame.Typ="4" Frame.Width="2" Text=""/>
+      <TfrxMemoView Name="Memo14" AllowVectorExport="True" Left="0" Top="1" Width="0" Height="22,67718" AutoWidth="True" Frame.Typ="0" Text="[Date] [Time]"/>
+      <TfrxMemoView Name="Memo15" Align="baRight" AllowVectorExport="True" Left="642,5201" Top="1" Width="75,5906" Height="22,67718" Frame.Typ="0" HAlign="haRight" Text="Página [Page#]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

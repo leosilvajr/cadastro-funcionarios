@@ -1,0 +1,21 @@
+program Pratic;
+
+uses
+  Vcl.Forms,
+  unitPrincipal in 'unitPrincipal.pas' {frmPrincipal},
+  unitCadFuncionarios in 'unitCadFuncionarios.pas' {frmCadFuncionario},
+  unitDM in 'unitDM.pas' {DM: TDataModule},
+  unitDemAgenda in 'unitDemAgenda.pas' {frmDemAgenda},
+  unitDemTerminalService in 'unitDemTerminalService.pas' {frmDemTerminalService};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmDemAgenda, frmDemAgenda);
+  Application.CreateForm(TfrmDemTerminalService, frmDemTerminalService);
+  Application.Run;
+end.

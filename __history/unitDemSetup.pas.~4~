@@ -1,0 +1,50 @@
+unit unitDemSetup;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, System.ImageList, Vcl.ImgList,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmSetup = class(TForm)
+    pnlTopo: TPanel;
+    Label1: TLabel;
+    btnSair: TButton;
+    editPesquisar: TEdit;
+    btnProcurar: TButton;
+    gridAgenda: TDBGrid;
+    pnlNavigator: TPanel;
+    btnPrimeiro: TButton;
+    btnAnterior: TButton;
+    btnProximo: TButton;
+    btnUltimo: TButton;
+    imageAgenda: TImageList;
+    qrySetup: TFDQuery;
+    dsSetup: TDataSource;
+    qrySetupnome: TStringField;
+    qrySetupnomePC: TStringField;
+    qrySetupprocessador: TStringField;
+    qrySetupmemoria: TIntegerField;
+    qrySetuphd_ssd: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSetup: TfrmSetup;
+
+implementation
+
+{$R *.dfm}
+
+uses unitCadFuncionarios, unitDemAgenda, unitDemRede, unitDemTerminalService,
+  unitDM, unitPrincipal;
+
+end.

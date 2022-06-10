@@ -1,0 +1,37 @@
+unit unitConsultaFuncionario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, System.ImageList, Vcl.ImgList,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmConsultaFuncionario = class(TForm)
+    pnlTopo: TPanel;
+    Label1: TLabel;
+    btnSair: TButton;
+    editPesquisar: TEdit;
+    btnProcurar: TButton;
+    gridFuncionario: TDBGrid;
+    pnlNavigator: TPanel;
+    btnPrimeiro: TButton;
+    btnAnterior: TButton;
+    btnProximo: TButton;
+    btnUltimo: TButton;
+    imageProduto: TImageList;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConsultaFuncionario: TfrmConsultaFuncionario;
+
+implementation
+
+{$R *.dfm}
+
+end.

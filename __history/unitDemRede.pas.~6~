@@ -1,0 +1,55 @@
+unit unitDemRede;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, System.ImageList, Vcl.ImgList,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmDemRede = class(TForm)
+    pnlTopo: TPanel;
+    Label1: TLabel;
+    btnSair: TButton;
+    editPesquisar: TEdit;
+    btnProcurar: TButton;
+    gridAgenda: TDBGrid;
+    pnlNavigator: TPanel;
+    btnPrimeiro: TButton;
+    btnAnterior: TButton;
+    btnProximo: TButton;
+    btnUltimo: TButton;
+    imageAgenda: TImageList;
+    qryRede: TFDQuery;
+    dsRede: TDataSource;
+    qryRedenome: TStringField;
+    qryRedenomePC: TStringField;
+    qryRedeip: TStringField;
+    qryRedemac: TStringField;
+    procedure btnSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmDemRede: TfrmDemRede;
+
+implementation
+
+{$R *.dfm}
+
+uses unitCadFuncionarios, unitDemAgenda, unitDemTerminalService, unitDM,
+  unitPrincipal;
+
+procedure TfrmDemRede.btnSairClick(Sender: TObject);
+begin
+  Close;
+end;
+
+end.
